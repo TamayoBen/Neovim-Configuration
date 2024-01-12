@@ -192,6 +192,11 @@ require('lazy').setup({
   --  { import = 'custom.plugins' },
 }, {})
 
+require("custom.keymaps")
+require("custom.options")
+require("custom.null-ls")
+require("custom.snippets")
+
 -- [[ Setting options ]]
 -- See `:help vim.o`
 
