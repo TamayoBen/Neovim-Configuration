@@ -14,6 +14,13 @@ null_ls.setup({
 
         -- Rust
         null_ls.builtins.formatting.rustfmt,
+
+        -- Bash
+        null_ls.builtins.diagnostics.shellcheck,
+        null_ls.builtins.formatting.shellharden,
+
+        -- C++
+        null_ls.builtins.formatting.clang_format,
     },
     on_attach = function(client, bufnr)
         if client.supports_method("textDocument/formatting") then
